@@ -1,10 +1,4 @@
 public class Design {
-    public static  String resetColorText = "\u001B[0m";
-    public static String redText = "";
-    public static String greenText = "\u001B[32m";
-    public static String yellowText = "\u001B[33m";
-    public static String blueText = "\u001B[34m";
-    public static String purpleText = "\u001B[35m";
     public static String centerText = "\t\t\t\t\t\t";
 
     public static String redText(String s) {
