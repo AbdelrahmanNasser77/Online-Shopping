@@ -37,8 +37,8 @@ public class Item {
 
     {
         return
-                Design.purpleText + message.printType() + Design.resetColorText +
-                        " , " + Design.blueText + message.printName() + Design.resetColorText +
-                        Design.yellowText + message.printQuality() + Design.resetColorText;
+                Design.purpleText(message.printType())  +
+                        " , " + Design.blueText(message.printName()) +
+                        Design.yellowText(message.printQuality()) ;
     }
 }

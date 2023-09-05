@@ -11,7 +11,7 @@ public class Menu {
         System.out.println("[4] " + "Electronics");
     }
     public static void food() {
-        System.out.println(Design.centerText + Design.purpleText + "Food" + Design.resetColorText);
+        System.out.println(Design.centerText + Design.purpleText("Food") );
 
         System.out.printf("%-20s%-1s%n", "\tName", "Price");
         for (int i = 1; i <= 4; i++) {
@@ -41,7 +41,7 @@ public class Menu {
     }
 
     public static void clothes() {
-        System.out.println(Design.centerText + Design.purpleText + "Clothes" + Design.resetColorText);
+        System.out.println(Design.centerText + Design.purpleText("Clothes"));
 
         System.out.printf("%-20s%-1s%n", "\tName", "Price");
         for (int i = 1; i <= 4; i++) {
@@ -71,14 +71,14 @@ public class Menu {
     }
 
     public static void homeAppliances() {
-        System.out.println(Design.centerText + Design.purpleText + "Home Appliances" + Design.resetColorText);
+        System.out.println(Design.centerText + Design.purpleText("Home Appliances"));
         System.out.println("[1] " + "Cookers");
         System.out.println("[2] " + "Washing Machines");
         System.out.println("[3] " + "Fridges");
         System.out.println("[4] " + "TVs");
     }
     public static void electronics() {
-        System.out.println(Design.centerText + Design.purpleText + "Electronics" + Design.resetColorText);
+        System.out.println(Design.centerText + Design.purpleText("Electronics"));
         System.out.println("[1] " + "Laptop");
         System.out.println("[2] " + "SmartPhone");
         System.out.println("[3] " + "Camera");

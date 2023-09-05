@@ -16,6 +16,6 @@ public class TotalCost {
     }
     public String toString() {
         return
-                "Total Cost = " + Design.redText + getTotalCost() + Design.resetColorText + " EGP";
+                "Total Cost = " + Design.redText(getTotalCost())  + " EGP";
     }
 }

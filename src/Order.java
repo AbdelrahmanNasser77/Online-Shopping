@@ -35,8 +35,8 @@ public class Order {
 
     public String toString() {
         return
-                Design.redText + getEachItemPrice() + Design.resetColorText  + " EGP/" + message.printQuantityType() +
-                        " , " + Design.greenText + getQuantity() + Design.resetColorText + " " + message.printQuantityType() +
-                        " , " + Design.redText +  getTotalItemPrice() + Design.resetColorText + " EGP";
+                Design.redText(getEachItemPrice())  + " EGP/" + message.printQuantityType() +
+                        " , " + Design.greenText(getQuantity()) + " " + message.printQuantityType() +
+                        " , " + Design.redText (getTotalItemPrice()) + " EGP";
     }
 }

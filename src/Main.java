@@ -63,13 +63,13 @@ public class Main {
             items[i].setItemName(in.nextInt());
             Design.cls();
 
-            System.out.println(Design.centerText + Design.blueText + message.printName() + Design.resetColorText);
+            System.out.println(Design.centerText + Design.blueText(message.printName()));
 
             switch (items[i].getItemType())
             {
                 case 1:
                 case 2:
-                    System.out.print("\t\t" + "How Many " + Design.greenText + message.printQuantityType() + Design.resetColorText + " for " + Design.blueText + message.printName() + Design.resetColorText + " --> " + "\t");
+                    System.out.print("\t\t" + "How Many " + Design.greenText(message.printQuantityType())  + " for " + Design.blueText(message.printName()) + " --> " + "\t");
                     break;
                 case 3:
                     switch (items[i].getItemName())
@@ -89,7 +89,7 @@ public class Main {
                     }
                     System.out.print("\t\t" + "What is your Budget" + "-->" + "\t");
                     items[i].setQuality(in.nextInt());
-                    System.out.print("\t\t" + "How Many " + Design.greenText + message.printQuantityType() + Design.resetColorText + " for " + Design.yellowText + message.printQuality() + Design.resetColorText + " "  + Design.blueText + message.printName() + Design.resetColorText + " --> " + "\t");
+                    System.out.print("\t\t" + "How Many " + Design.greenText(message.printQuantityType()) + " for " + Design.yellowText(message.printQuality()) + " "  + Design.blueText(message.printName()) + " --> " + "\t");
                     break;
                 case 4:
                     switch (items[i].getItemName())
@@ -109,7 +109,7 @@ public class Main {
                     }
                     System.out.print("\t\t" + "What is your Budget" + "-->" + "\t");
                     items[i].setQuality(in.nextInt());
-                    System.out.print("\t\t" + "How Many " + Design.greenText + message.printQuantityType() + Design.resetColorText + " for " + Design.yellowText + message.printQuality() + Design.resetColorText + " "  + Design.blueText + message.printName() + Design.resetColorText + " --> " + "\t");
+                    System.out.print("\t\t" + "How Many " + Design.greenText(message.printQuantityType()) + " for " + Design.yellowText(message.printQuality()) + " "  + Design.blueText(message.printName()) + " --> " + "\t");
                     break;
             }
             items[i].setMessage(message);
